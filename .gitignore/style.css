@@ -1,0 +1,44 @@
+.container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    background-color: #76FF03;
+    height: 66px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.title > .text {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.title > .icon {
+    color: #1B5E20;
+    font-size: 2em;
+    float: right;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send {
+    float: right; 
+}
+
+.email {
+    color: blue;
+}
+
+.response {
+    text-align: right;
+}
+
+.response > .text {
+    color: #1B5E20;
+}

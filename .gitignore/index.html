@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Green Leaves</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body data-ng-app="Examen">
+        <div class="container">
+            <h1 class="title">
+                <span class="text">Green Leaves</span>
+                <span class="icon"><i class="fas fa-leaf"></i></span>
+            </h1>
+
+            <ng-view></ng-view>
+        </div>
+
+        <script src="index.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    </body>
+</html>

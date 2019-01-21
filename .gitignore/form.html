@@ -1,0 +1,50 @@
+<div data-ng-controller="IndexController" data-ng-init="init()">
+    <form name="frm">
+        <table class="table">
+            <tr>
+                <td>Nombre:</td>
+                <td>
+                    <input type="text" id="txtNombre" name="nombre" data-ng-model="obj.nombre" required>
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td>
+                    <input type="email" id="txtEmail" name="email" data-ng-model="obj.email" ng-pattern="emailFormat" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Tel&eacute;fono:</td>
+                <td>
+                    <input type="tel" id="txtTelefono" name="telefono" data-ng-model="obj.telefono" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Fecha:</td>
+                <td>
+                    <input type="text" id="txtFecha" name="fecha" data-ng-model="obj.fecha" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Ciudad y Estado:</td>
+                <td>
+                    <input type="text" id="txtCiudad" name="ciudad" data-ng-model="obj.ciudad" data-ng-keypress="obtenerCiudades()" required>
+                </td>
+            </tr>
+            <tr>
+        </table>
+        <input type="button" value="Enviar" class="ui-button ui-widget ui-corner-all send" data-ng-click="enviar(frm)">
+    </form>
+    
+    <div id="dialog" title="Basic dialog" style="display: none">
+        <p>Se encontraron los siguientes errores en sus datos de contacto:</p>
+        
+            <div> 
+            <ul>
+                <li ng-repeat="e in errores">{{ e }}</li>
+            </ul>
+            </div>
+        
+        <p>Por favor corrija los errores para continuar.</p>
+    </div>
+</div>
